@@ -1,0 +1,10 @@
+
+th, td {
+    color:brown;
+    background-color: rgb(94, 187, 187);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+  }

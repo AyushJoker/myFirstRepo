@@ -1,0 +1,24 @@
+<p>product works!</p>
+<h2>Product Details!</h2>
+<h4>Product Name:{{ProductName|uppercase}}</h4>
+<h4>{{priceDayWise|json}}</h4>
+<h4>Product Price: {{price | currency:'INR'}}</h4>
+<h4>Product Quantity:{{Quantity}}</h4>
+<h4>Product Total Amount:{{Amount}}</h4>
+<h4>Manufacture Date:{{mfd|date:'fullDate'}}</h4>
+<h3>ng example</h3>
+<h5>*ngIf="a>b"> a is greater than b</h5>
+<div *ngIf="a>b"> a is greater than b</div>
+<table>
+    <tr>
+        <th>Name</th>
+        <td>Price</td>
+        <td>Quantity
+        <td>MF Date</td>
+    </tr>
+    <tr *ngFor="let p of products">
+        <td>{{p.productname}}</td>
+        <td>{{p.price}}</td>
+        <td>{{p.quantity}}</td>
+        <td>{{p.mfd|date:'shortDate'}}</td>
+</table>

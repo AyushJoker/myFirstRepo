@@ -1,0 +1,16 @@
+<p>book works!</p>
+<table class="t" padding:2px>
+    <tr>
+        <th>Book Id</th>
+        <th>Book Name</th>
+        <th>Book Price</th>
+        <th>Author Name</th>
+        <th>Book Images</th>
+    </tr>
+    <tr *ngFor="let b of books">
+        <td>{{b.bookID}}</td>
+        <td>{{b.bookName}}</td>
+        <td>{{b.price|currency:'INR'}}</td>
+        <td>{{b.author}}</td>
+        <td><img src={{b.photo}} width="100" height="100"></td>
+</table>

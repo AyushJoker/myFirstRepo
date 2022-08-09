@@ -1,0 +1,21 @@
+<p>friend works!</p>
+<p>
+    {{friend|json}}
+</p>
+<ol>
+    <li *ngFor="let f of friend">{{f}}</li>
+</ol>
+
+<table class="t" padding:2px>
+    <tr>
+        <th>Name</th>
+        <td>Contact</td>
+        <td>Email
+        <td>Photo</td>
+    </tr>
+    <tr *ngFor="let i of friends">
+        <td>{{i.Name}}</td>
+        <td>{{i.Contact}}</td>
+        <td>{{i.Email}}</td>
+        <td><img src={{i.Photo}} width="100" height="100"></td>
+</table>
